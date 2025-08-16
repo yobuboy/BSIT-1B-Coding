@@ -27,3 +27,4 @@ print(n6," = 20")
 print(n7," = 10")
 print(n8," = 5")
 print(n9," = 1")
+# Miss na kita
