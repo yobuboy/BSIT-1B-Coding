@@ -11,3 +11,4 @@ print("The Quotient of",number1,"and",number2,"is",divide)
 print(number1, "exponent by", number2, "is",number1**number2)
 print("The remainder of", number1,"and",number2,"is",number1%number2)
 print("The floor division of", number1,"and",number2,"is",number1//number2)
+# these are arithmetic operators and used to perform math operations like addition, subtraction, multiplication, division, powers, etc.
