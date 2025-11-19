@@ -7,7 +7,9 @@ d = 7
 username = 'yobuboy'
 password = 'imissyou'
 
-#print(( username == 'yobuboy' ) and ( password == 'imissyou' ))
-#print(( a > b ) and ( c > d ))
-#print(( a > b ) or ( c > d ))
+print(( username == 'yobuboy' ) and ( password == 'imissyou' ))
+print(( a > b ) and ( c > d ))
+print(( a > b ) or ( c > d ))
+
 print(not((a > b) or ( c < d )))
+# comparison operators pa din ito guys hahaha
