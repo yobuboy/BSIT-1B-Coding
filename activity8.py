@@ -9,4 +9,6 @@ name2 = 'andrei'
 
 print( a > b )
 print( c >= d )
+
 print( name1 != name2 )
+# this are the comparison operators that used to compare values and return as a boolean result(true or false)
