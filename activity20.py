@@ -1,4 +1,4 @@
-
+# this program gives a diamond output
 for drei in range(1,11,1):
     for h in range(10, drei, -1):
         print(" ", end=" ")
