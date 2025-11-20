@@ -5,3 +5,4 @@ for c in range(1, 11, 1):
     num = eval(input("Enter any number --> "))
     sum += num
 print("The sum of all given numbers is", sum)
+# this program is a summation of all entered number
