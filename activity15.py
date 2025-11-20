@@ -13,3 +13,4 @@ for i in range(1, 6):
     x  = eval(input(f"{i} - Input a number --> "))
     sum += x 
 print(f"The total sum is {sum}")
+# string formating is use to make your program looks clean and lessen the use of comma that leads to an error when you forgot to add comma every variable that you add.
