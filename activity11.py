@@ -18,3 +18,4 @@ elif temp >= 61:
 	print("Temperature is considered as BURNING TEMPERATURE")
 else:
 	print("Invalid Temperature")
+# this conditional statement determine what level the current temperature is
