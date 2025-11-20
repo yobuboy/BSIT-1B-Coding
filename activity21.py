@@ -7,3 +7,4 @@ while bake == True:
     else:
         print("your cake is done!!")
         break
+# while loop used to repeat a block of code as long as the condition is true
