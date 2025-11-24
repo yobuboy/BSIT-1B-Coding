@@ -17,7 +17,8 @@ while True:
     print("D - DELETE STUDENT RECORD")
     print("E - EDIT STUDENT RECORD")
     print("F - EXPORT STUDENT RECORD")
-    print("G - EXIT SYSTEM")
+    print("G - IMPORT STUDENT RECORD")
+    print("X - EXIT SYSTEM")
     print("=========================================")
     choice = input("SELECT FROM THE OPTIONS ABOVE ---> ").lower()
 
@@ -108,12 +109,23 @@ while True:
         continue
     elif choice == 'f':
         os.system("cls")
-        print("EXPORT RECORD")
+        print("EXPORT STUDENT RECORD")
+        # json JavaScript Object Notation
+                # w = write
         with open('student_record.json', 'w') as new_file:
             json.dump(student_record,new_file, indent=4)
         print("EXPORT SUCCESSFUL")
         continue
     elif choice == 'g':
+        os.system("cls")
+        print("IMPORT STUDENT RECORD")
+                # r = read
+        with open('student_record.json', 'r') as new_file:
+            imported_student = json.load(new_file)
+        student_record = imported_student
+        print("IMPORT SUCCESSFUL")
+        continue
+    elif choice == 'x':
         break
     else:
         print("INVALID CHOICE")
