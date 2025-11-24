@@ -12,7 +12,8 @@ print(equips[4: 2])
 equips.append('Passion Cloak')
 print(equips)
 
-equips.append(4, 'Protector Gloves')
+# inserting between in a list
+equips.insert(4, 'Protector Gloves')
 print(equips)
 
 # Removing an Item
