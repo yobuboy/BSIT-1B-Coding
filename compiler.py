@@ -13,10 +13,35 @@ while True:
                 while True:
                     how = input("\tA. print\n\tB. input\n\tC. Back\nType here ---> ").lower()
                     if how == 'a':
-                        pass
+                        while True:
+                            wow = input("OUTPUT:\n\tHello World\n\nInput:\n\tprint(\"Hello World\")\n\n\tA. Explanation\n\tB. Back\nType here ---> ")
+                            if wow == 'a':
+                                print("EXPLANATION:\n\tIn Python, print() is a built-in function used to\n\tdisplay text or other data on the screen. When you\n\tcall print(), Python converts the value you provide\n\tinto a readable string (if it isn\'t already one) and\n\tsends it to the standard output, which is usually\n\tyour console or terminal. and always don\'t forget\n\tto use double comma(\"\") inside the parentheses")
+                                continue
+                            elif wow == 'b':
+                                pass
+                                break
+                            else:
+                                print("Invalid Input")
+                                continue
                         continue
                     elif how == 'b':
-                        pass
+                        examp = input("EXAMPLE OUTPUT:\n\tWhat is your name?\nType here ---> ")
+                        print(f"Hello {examp}, It\'s nice to see you here.")
+                        wow = input("\nInput:\n\tprint(\"Hello World\")\n\n\tA. Explanation\n\tB. EVAL\n\tC. LEN\nType here ---> ")
+                        while True:
+                            if wow == 'a':
+                                print("EXPLANATION:\n\tIn Python, print() is a built-in function used to\n\tdisplay text or other data on the screen. When you\n\tcall print(), Python converts the value you provide\n\tinto a readable string (if it isn\'t already one) and\n\tsends it to the standard output, which is usually\n\tyour console or terminal. and always don\'t forget\n\tto use double comma(\"\") inside the parentheses")
+                                continue
+                            elif wow == 'b':
+                                pass
+                                break
+                            elif wow == 'c':
+                                pass
+                                break
+                            else:
+                                print("Invalid Input")
+                                continue
                         continue
                     elif how == 'c':
                         pass
