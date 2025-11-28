@@ -13,25 +13,25 @@ while True:
                 while True:
                     how = input("\tA. print\n\tB. input\n\tC. Back\nType here ---> ").lower()
                     if how == 'a':
+                        print("OUTPUT:\n\tHello World\n")
                         while True:
-                            wow = input("OUTPUT:\n\tHello World\n\nInput:\n\tprint(\"Hello World\")\n\n\tA. Explanation\n\tB. Back\nType here ---> ")
+                            wow = input("Input:\n\tprint(\"Hello World\")\n\n\tA. Explanation\n\tB. Back\nType here ---> ")
                             if wow == 'a':
                                 print("EXPLANATION:\n\tIn Python, print() is a built-in function used to\n\tdisplay text or other data on the screen. When you\n\tcall print(), Python converts the value you provide\n\tinto a readable string (if it isn\'t already one) and\n\tsends it to the standard output, which is usually\n\tyour console or terminal. and always don\'t forget\n\tto use double comma(\"\") inside the parentheses")
-                                continue
-                            elif wow == 'b':
-                                pass
+                                print("============================================================")
                                 break
                             else:
                                 print("Invalid Input")
                                 continue
                         continue
                     elif how == 'b':
-                        examp = input("EXAMPLE OUTPUT:\n\tWhat is your name?\nType here ---> ")
-                        print(f"Hello {examp}, It\'s nice to see you here.")
-                        wow = input("\nInput:\n\tprint(\"Hello World\")\n\n\tA. Explanation\n\tB. EVAL\n\tC. LEN\nType here ---> ")
+                        examp = input("EXAMPLE OUTPUT:\n\tWhat is your name? ")
+                        print(f"\tHello {examp}, It\'s nice to see you here.")
                         while True:
+                            wow = input("\nInput:\n\tvariable = input(\"What is your name? \")\n\tprint(f\"Hello {variable}, It\'s nice to see you here.\")\n\n\tA. Explanation\n\tB. EVAL\n\tC. LEN\nType here ---> ")
                             if wow == 'a':
-                                print("EXPLANATION:\n\tIn Python, print() is a built-in function used to\n\tdisplay text or other data on the screen. When you\n\tcall print(), Python converts the value you provide\n\tinto a readable string (if it isn\'t already one) and\n\tsends it to the standard output, which is usually\n\tyour console or terminal. and always don\'t forget\n\tto use double comma(\"\") inside the parentheses")
+                                print("EXPLANATION:\n\tinput() is a built-in Python function used to receive\n\tinformation from the user while the program is running.\n\tIt is one of the main ways Python programs can interact\n\twith people in real time. When you use input(), your\n\tprogram pauses and waits until the user types something\n\tand presses Enter. After that, the function returns the\n\ttext the user typed.")
+                                print("===============================================================")
                                 continue
                             elif wow == 'b':
                                 pass
