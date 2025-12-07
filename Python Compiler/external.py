@@ -1,4 +1,4 @@
-os.system('cls')from internal import *
+from internal import *
 import os
 
 def introduction():
@@ -23,3 +23,4 @@ def introduction():
         else:
             os.system('cls')
             print("Invalid input!")
+
