@@ -4,18 +4,18 @@ import os
 def introduction():
     os.system('cls')
     while True:
-        name = input("\tA. What is Python?\n\tB. Why is Python good for beginners?\n\tC. How to use this compiler?\n\tX. Exit").lower()
+        name = input("\tA. What is Python?\n\tB. Why is Python good for beginners?\n\tC. How to use this compiler?\n\tX. Exit\nType here ---> ").lower()
         if name == 'a':
             os.system('cls')
-            print(one)
-            continue
+            one()
+            
         elif name == 'b':
             os.system('cls')
-            print(two)
-            continue
+            two()
+            
         elif name == 'c':
             os.system('cls')
-            print(three)
+            pass
             continue
         elif name == 'x':
             os.system('cls')
@@ -23,4 +23,3 @@ def introduction():
         else:
             os.system('cls')
             print("Invalid input!")
-
