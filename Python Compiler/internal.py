@@ -1,6 +1,7 @@
 import os
 import time
 import sys
+import code
 
 def typewriter(text, speed=0.05):
     for char in text:
@@ -121,12 +122,12 @@ def prints():
             typewriter("Type \'exit\' if you want to leave.\n")
             time.sleep(2)
             while True:
-                user_code = input(">>> ")
-                if user_code.lower() == "exit":
+                tryss = input(">>> ")
+                if tryss.lower() == "exit":
                     typewriter("Exiting compiler...")
                     break               
                 try:
-                    exec(user_code)
+                    exec(tryss)
                 except Exception as e:
                     print("Error:", e)
             os.system('cls')
@@ -142,7 +143,7 @@ def variables():
     typewriter("\tA variable in Python is a name you create to store a value in your program. It works like a container")
     typewriter("\tor a box where you keep information that you want to use later.")
     time.sleep(1)
-    typewriter("\tEXAMPLE:\n\t\tname = \'Mark\'\n\t\tage = 17")
+    typewriter("\tEXAMPLE:\n\t\tname = \'Mark\'\n\t\tage = 18")
     time.sleep(1)
     typewriter("\tyou are storing the words “Mark” and the number 17 inside variables. This makes your program more")
     typewriter("\tflexible because you can save data, change it, and reuse it anytime. Variables are important because")
@@ -167,3 +168,33 @@ def variables():
         except Exception as e:
             print("Error:", e)
     os.system('cls')
+
+def inputs():
+    os.system('cls')
+    print("EXPLANATION:")
+    typewriter("\tIn Python, the input() function is a built-in function used to capture user input from the console.")
+    typewriter("\tWhen the input() function is called, the program pauses and waits for the user to type something.")
+    typewriter("\tThe user\'s input is then returned as a string, regardless of whether the user enters a number, word,")
+    typewriter("\tor sentence. You can provide an optional prompt message inside the input() function to guide the user")
+    typewriter("\ton what to enter.")
+    time.sleep(1)
+    typewriter("\tEXAMPLE:\n\t\tinput(\"Enter your name here: \")\n\t\tinput(\"Enter your age here: \")")
+    time.sleep(1)
+    typewriter("\tand then it will display \"Enter your name here: \" in the console, and then wait for the user to")
+    typewriter("\ttype their name. Once the user presses Enter, the input is returned as a string and can be stored")
+    typewriter("\tin a variable for further use.")
+    time.sleep(.5)
+    typewriter("\nNow I will show you how input works in python")
+    input("\npress enter to continue: ")
+    typewriter("\nINPUT:\n\tinput(\"Enter your name here: \")")
+    typewriter("\nOUTPUT:\n\tEnter your name here:")
+    input("\npress enter to try: ")
+    os.system('cls')
+    typewriter("Type \'exit\' if you want to leave.\n")
+    time.sleep(2)
+    class MyTerminal(code.InteractiveConsole):
+        def run(self):
+            print("My Python Terminal (supports input())")
+            print("Type exit() to quit.\n")
+            self.interact()
+    MyTerminal().run()
