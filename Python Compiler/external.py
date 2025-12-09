@@ -1,50 +1,43 @@
+from external import *
 from internal import *
-import os
 import time
+import os
 
-def introduction():
-    os.system('cls')
-    typewriter("Wellcome to Introduction of Python, Enjoy :D")
-    time.sleep(.5)
-    while True:
-        name = input("\nChoose from the selection below :D\n\tA. What is Python?\n\tB. Why is Python good for beginners?\n\tC. How to use this compiler?\n\tX. Exit\nType here ---> ").lower()
-        if name == 'a':
-            os.system('cls')
-            one()         
-        elif name == 'b':
-            os.system('cls')
-            two()           
-        elif name == 'c':
-            os.system('cls')
-            three()
-        elif name == 'x':
-            os.system('cls')
-            break
-        else:
-            os.system('cls')
-            print("Invalid input!")
+os.system('cls')
+typewriter("Hello, programmer!")
+time.sleep(.5)
+typewriter("Wellcome to the Python Learning Compiler\n")
+time.sleep(1)
+typewriter("Learn Python easily, understand each topic clearly, and start coding with confidence.\n")
+time.sleep(2)
+print("Let\'s begin!")
+time.sleep(1)
+input("\npress enter if you are ready!: ")
+os.system('cls')
 
-def basics():
-    os.system('cls')
-    typewriter("Wellcome to Basics in Python, Enjoy :D")
-    time.sleep(.5)
-    while True:
-        name = input("\nChoose from the selection below :D\n\tA. Printing\n\tB. Variables\n\tC. Input\n\tD. Operators\n\tX. Exit\nType here ---> ").lower()
-        if name == 'a':
-            os.system('cls')
-            prints()         
-        elif name == 'b':
-            os.system('cls')
-            variables()           
-        elif name == 'c':
-            os.system('cls')
-            pass
-        elif name == 'd':
-            os.system('cls')
-            pass
-        elif name == 'x':
-            os.system('cls')
-            break
-        else:
-            os.system('cls')
-            print("Invalid input!")
+while True:
+    name = input("Choose from the selection below :D\n\tA. Introduction\n\tB. Basics\n\tC. Decisions\n\tD. Loops\n\tE. Collections\n\tF. Functions\n\tG. Modules\n\tH. Files\n\tI. Mini Projects\n\tJ. Quiz Section\n\tX. Exit\nType here ---> ").lower()
+    if name == 'a':
+        introduction()
+    elif name == 'b':
+        basics()
+    elif name == 'c':
+        pass
+    elif name == 'd':
+        pass
+    elif name == 'e':
+        pass
+    elif name == 'f':
+        pass
+    elif name == 'g':
+        pass
+    elif name == 'h':
+        pass
+    elif name == 'i':
+        pass
+    elif name == 'j':
+        pass
+    elif name == 'x':
+        break
+    else:
+        print("Invalid input!")
