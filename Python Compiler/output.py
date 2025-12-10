@@ -22,9 +22,9 @@ while True:
     elif name == 'b':
         basics()
     elif name == 'c':
-        pass
+        decisions()
     elif name == 'd':
-        pass
+        loops()
     elif name == 'e':
         pass
     elif name == 'f':
