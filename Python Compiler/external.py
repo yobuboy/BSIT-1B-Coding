@@ -54,13 +54,7 @@ def decisions():
     typewriter("Wellcome to Decisions in Python, Enjoy :D")
     time.sleep(.5)
     os.system('cls')
-    print("EXPLANATION:")
-    typewriter("\tPython uses if, elif, and else statements to let your program make decisions. An if statement checks a")
-    typewriter("\tcondition, and if that condition is true, Python runs the code inside it. If the condition is false,")
-    typewriter("\tPython skips it. When you need to check more than one possible condition, you use elif, which means")
-    typewriter("\t\"else if.\" Python goes through each condition in order until one of them is true. If none of the if")
-    typewriter("\tconditions are true, the else block runs as the final fallback. This structure allows your program to")
-    typewriter("\trespond differently depending on the situation, making your code more flexible and interactive.")
+    decs_exple()
     time.sleep(1)
     while True:
         name = input("\nChoose below which example you want to shown :D\n\tA. if\n\tB. if + else\n\tC. if + elif + else\n\tX. Exit\nType here ---> ").lower()
@@ -141,7 +135,44 @@ def functiosss():
             built_in()         
         elif name == 'b':
             os.system('cls')
-            pass           
+            user_def()           
+        elif name == 'x':
+            os.system('cls')
+            break
+        else:
+            os.system('cls')
+            print("Invalid input!")
+
+def moduless():
+    os.system('cls')
+    typewriter("Wellcome to Modules in Python, Enjoy :D")
+    time.sleep(.5)
+    while True:
+        name = input("\nChoose from the selection below :D\n\tA. math\n\tB. random\n\tC. datetime\n\tD. os\n\tE. sys\n\tF. statistics\n\tG. json\n\tH. Summary Table\n\tX. Exit\nType here ---> ").lower()
+        if name == 'a':
+            os.system('cls')
+            maths()         
+        elif name == 'b':
+            os.system('cls')
+            randoms()
+        elif name == 'c':
+            os.system('cls')
+            datetimes()
+        elif name == 'd':
+            os.system('cls')
+            osss()
+        elif name == 'e':
+            os.system('cls')
+            sysss()
+        elif name == 'f':
+            os.system('cls')
+            statistics()
+        elif name == 'g':
+            os.system('cls')
+            jsons()
+        elif name == 'f':
+            os.system('cls')
+            sumbless()        
         elif name == 'x':
             os.system('cls')
             break
