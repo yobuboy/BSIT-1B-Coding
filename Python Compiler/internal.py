@@ -919,5 +919,6 @@ def sumbless():
     time.sleep(.1)
     print("\t======================================================================================================================")
     time.sleep(2)
-    input("press enter when you are done: ")
+    input("\npress enter when you are done: ")
     os.system('cls')
+
