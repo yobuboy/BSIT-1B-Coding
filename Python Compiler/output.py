@@ -26,9 +26,9 @@ while True:
     elif name == 'd':
         loops()
     elif name == 'e':
-        pass
+        collections()
     elif name == 'f':
-        pass
+        functiosss()
     elif name == 'g':
         pass
     elif name == 'h':
