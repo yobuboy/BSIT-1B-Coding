@@ -102,4 +102,49 @@ def loops():
             os.system('cls')
             print("Invalid input!")
 
-    
+def collections():
+    os.system('cls')
+    typewriter("Wellcome to Collections in Python, Enjoy :D")
+    time.sleep(.5)
+    while True:
+        name = input("\nChoose from the selection below :D\n\tA. Summary Table\n\tB. List\n\tC. Tuple\n\tD. Set\n\tE. Dictionary\n\tX. Exit\nType here ---> ").lower()
+        if name == 'a':
+            os.system('cls')
+            summ_list()        
+        elif name == 'b':
+            os.system('cls')
+            listss()           
+        elif name == 'c':
+            os.system('cls')
+            tuplesss()
+        elif name == 'd':
+            os.system('cls')
+            setss()
+        elif name == 'e':
+            os.system('cls')
+            dictss()
+        elif name == 'x':
+            os.system('cls')
+            break
+        else:
+            os.system('cls')
+            print("Invalid input!")
+
+def functiosss():
+    os.system('cls')
+    typewriter("Wellcome to Function in Python, Enjoy :D")
+    time.sleep(.5)
+    while True:
+        name = input("\nChoose from the selection below :D\n\tA. Built-in Functions (already provided by Python)\n\tB. User-Defined Functions (functions you create)\n\tX. Exit\nType here ---> ").lower()
+        if name == 'a':
+            os.system('cls')
+            built_in()         
+        elif name == 'b':
+            os.system('cls')
+            pass           
+        elif name == 'x':
+            os.system('cls')
+            break
+        else:
+            os.system('cls')
+            print("Invalid input!")
