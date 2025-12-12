@@ -170,7 +170,7 @@ def moduless():
         elif name == 'g':
             os.system('cls')
             jsons()
-        elif name == 'f':
+        elif name == 'h':
             os.system('cls')
             sumbless()        
         elif name == 'x':
@@ -179,3 +179,4 @@ def moduless():
         else:
             os.system('cls')
             print("Invalid input!")
+
