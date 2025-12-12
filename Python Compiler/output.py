@@ -30,7 +30,7 @@ while True:
     elif name == 'f':
         functiosss()
     elif name == 'g':
-        pass
+        moduless()
     elif name == 'h':
         pass
     elif name == 'i':
