@@ -29,7 +29,7 @@ def basics():
     typewriter("Wellcome to Basics in Python, Enjoy :D")
     time.sleep(.5)
     while True:
-        name = input("\nChoose from the selection below :D\n\tA. Printing\n\tB. Variables\n\tC. Input\n\tD. Operators\n\tX. Exit\nType here ---> ").lower()
+        name = input("\nChoose from the selection below :D\n\tA. Printing\n\tB. Variables\n\tC. Input\n\tD. Operators\n\tE. String Formatting\n\tX. Exit\nType here ---> ").lower()
         if name == 'a':
             os.system('cls')
             prints()         
@@ -42,6 +42,9 @@ def basics():
         elif name == 'd':
             os.system('cls')
             operators()
+        elif name == 'e':
+            os.system('cls')
+            string_form()
         elif name == 'x':
             os.system('cls')
             break
@@ -228,6 +231,28 @@ def mini_proj():
         elif name == 'n':
             os.system('cls')
             code14()   
+        elif name == 'x':
+            os.system('cls')
+            break
+        else:
+            os.system('cls')
+            print("Invalid input!")
+
+def quiz_sect():
+    os.system('cls')
+    typewriter("Wellcome to Quiz Section in Python, Enjoy :D")
+    time.sleep(.5)
+    while True:
+        name = input("\nChoose from the selection below :D\n\tA. Easy\n\tB. Medium\n\tC. Hard\n\tX. Exit\nType here ---> ").lower()
+        if name == 'a':
+            os.system('cls')
+            easyq()         
+        elif name == 'b':
+            os.system('cls')
+            medq()
+        elif name == '':
+            os.system('cls')
+            hardq()            
         elif name == 'x':
             os.system('cls')
             break
