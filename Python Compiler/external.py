@@ -180,3 +180,57 @@ def moduless():
             os.system('cls')
             print("Invalid input!")
 
+def mini_proj():
+    os.system('cls')
+    batiti()
+    time.sleep(.5)
+    while True:
+        name = input("\nChoose from the selection below :D\n\tA. Code_Challenge_1\n\tB. Code_Challenge_2\n\tC. Code_Challenge_3\n\tD. Code_Challenge_4\n\tE. Code_Challenge_5\n\tF. Code_Challenge_6\n\tG. Code_Challenge_7\n\tH. Code_Challenge_8\n\tI. Code_Challenge_9\n\tJ. Code_Challenge_10\n\tK. Code_Challenge_11\n\tL. Code_Challenge_12\n\tM. Code_Challenge_13\n\tN. Code_Challenge_14\n\tX. Exit\nType here ---> ").lower()
+        if name == 'a':
+            os.system('cls')
+            code1()         
+        elif name == 'b':
+            os.system('cls')
+            code2()        
+        elif name == 'c':
+            os.system('cls')
+            code3()
+        elif name == 'd':
+            os.system('cls')
+            code4()        
+        elif name == 'e':
+            os.system('cls')
+            code5()
+        elif name == 'f':
+            os.system('cls')
+            code6()        
+        elif name == 'g':
+            os.system('cls')
+            code7()
+        elif name == 'h':
+            os.system('cls')
+            code8()        
+        elif name == 'i':
+            os.system('cls')
+            code9()
+        elif name == 'j':
+            os.system('cls')
+            code10()       
+        elif name == 'k':
+            os.system('cls')
+            code11()
+        elif name == 'l':
+            os.system('cls')
+            code12()        
+        elif name == 'm':
+            os.system('cls')
+            code13()
+        elif name == 'n':
+            os.system('cls')
+            code14()   
+        elif name == 'x':
+            os.system('cls')
+            break
+        else:
+            os.system('cls')
+            print("Invalid input!")
