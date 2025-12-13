@@ -35,7 +35,7 @@ while True:
     elif name == 'h':
         mini_proj()
     elif name == 'i':
-        pass
+        quiz_sect()
     elif name == 'x':
         break
     else:
