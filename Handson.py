@@ -10,7 +10,7 @@ total = 0
 for num in nsan:
     total = total + num
 ave = total/n
-print("fThe average of the number is {ave}")
+print(f"The average of the number is {ave}")
 if ave < n:
     print(f"The length of the word '{ilan}' is less than the average.")
 elif ave > n:
